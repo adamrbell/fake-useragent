@@ -95,8 +95,8 @@ def get_browsers(verify_ssl=True):
     very very hardcoded/dirty re/split stuff, but no dependencies
     """
     html = get(settings.BROWSERS_STATS_PAGE, verify_ssl=verify_ssl)
-    html = html.decode('utf-8')
-    html = html.split('<table class="w3-table-all notranslate">')[1]
+    html = html.decode('utf8')
+    html = html.split('<table class="ws-table-all notranslate">')[1]
     html = html.split('</table>')[0]
 
     pattern = r'\.asp">(.+?)<'
