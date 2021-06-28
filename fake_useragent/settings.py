@@ -21,7 +21,7 @@ BROWSERS_STATS_PAGE = 'https://www.w3schools.com/browsers/default.asp'
 
 BROWSER_BASE_PAGE = 'http://useragentstring.com/pages/useragentstring.php?name={browser}'  # noqa
 
-BROWSERS_COUNT_LIMIT = 50
+BROWSERS_COUNT_LIMIT = 10
 
 REPLACEMENTS = {
     ' ': '',
@@ -32,7 +32,7 @@ SHORTCUTS = {
     'internet explorer': 'internetexplorer',
     'ie': 'internetexplorer',
     'msie': 'internetexplorer',
-    'edge': 'internetexplorer',
+    'edge': 'edge',
     'google': 'chrome',
     'googlechrome': 'chrome',
     'ff': 'firefox',
@@ -41,6 +41,7 @@ SHORTCUTS = {
 OVERRIDES = {
     'Edge/IE': 'Internet Explorer',
     'IE/Edge': 'Internet Explorer',
+    'Edge': 'edge',
 }
 
 HTTP_TIMEOUT = 5
